@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.Gravity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(),
                 "Answer`s ready!",
                 Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.START, 500,0);     //not working!!!
 
 
 //        if((Num1 != null)||(Num2 != null)){
