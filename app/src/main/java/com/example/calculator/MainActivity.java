@@ -15,12 +15,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView Result;
     private EditText Num1, Num2;
 
-    public float parseNumber(EditText CurrentEditText){
+    public float parseNumber(EditText CurrentEditText) {
         float number = 0.0f;
         try {
             number = Float.parseFloat(CurrentEditText.getText().toString());
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             // do nothing here
         }
         return number;
@@ -43,12 +42,10 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(),
                 "Answer`s ready!",
                 Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.START, 500,0);     //not working!!!
+        toast.setGravity(Gravity.START, 500, 0);     //not working!!!
 
 
 //        if((Num1 != null)||(Num2 != null)){
-
-
 
 
         plus_button.setOnClickListener(v -> {
@@ -93,10 +90,9 @@ public class MainActivity extends AppCompatActivity {
 
             String result_as_text = "";
 
-            if (number2==0.0f) {
+            if (number2 == 0.0f) {
                 result_as_text = "Infinity =)";
-            }
-            else {
+            } else {
                 float Res = number1 / number2;
                 result_as_text = String.valueOf(Res);
             }
@@ -114,4 +110,5 @@ public class MainActivity extends AppCompatActivity {
 //            toast.show();
 //        }
 
-    }}
+    }
+}
